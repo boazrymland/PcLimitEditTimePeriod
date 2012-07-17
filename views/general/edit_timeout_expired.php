@@ -1,1 +1,2 @@
-Sorry - edit timeout has expired. Editing is not possible.
+<?php
+echo $message;

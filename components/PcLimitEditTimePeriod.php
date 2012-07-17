@@ -20,6 +20,8 @@ class PcLimitEditTimePeriod extends CActiveRecordBehavior {
 	 * Used in several locations in the code hence taken out to a convenience var here */
 	private $_ownerCreatedOnValue;
 
+	private $_defaultMessage = "Sorry - edit timeout has expired. Editing is not possible.";
+
 	/**
 	 * @return bool telling whether edit is allowed for this model or not.
 	 */
@@ -66,7 +68,11 @@ class PcLimitEditTimePeriod extends CActiveRecordBehavior {
 		}
 
 		if (!$this->isEditAllowed()) {
-			Yii::app()->getController()->render("//general/edit_timeout_expired");
+			// check if we have a custom message or not:
+			if ($this->message === false) {
+				$this->message = $this->_defaultMessage;
+			}
+			Yii::app()->getController()->render("//general/edit_timeout_expired", array('message' => $this->message));
 		}
 
 		return;
