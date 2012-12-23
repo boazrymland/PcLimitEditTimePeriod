@@ -3,7 +3,6 @@ PcLimitEditTimePeriod
 
 Yii extension that enables limiting the 'edit' action of an CActiveRecord to a certain time frame after model creation time
 
-<<<<<<< HEAD
 * @license:
 * Copyright (c) 2012, Boaz Rymland
 * All rights reserved.
@@ -24,6 +23,5 @@ Yii extension that enables limiting the 'edit' action of an CActiveRecord to a c
 * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
 * TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-=======
+ 
 Please see full documentation for this extension in the [official Yii extension page](http://www.yiiframework.com/extension/pclimitedittimeperiod/)
->>>>>>> d57c5627f647738d4b5a8f754eb9e6d7ba901bcc
